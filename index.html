@@ -16,31 +16,31 @@
     <div class="container">
         <!-- WORK FROM INSIDE THIS CONTAINER-->
         <h1>Rock Paper Scissors</h1>
-        <div id="welcome-screen">
-            <form id="name-form" action="">
+        <div id="welcome-screen" class="p-3">
+            <form id="name-form">
                 <div class="form-group">
                     <label for="username">Your Name</label>
                     <input class="form-control" type="text" id="username" name="username" placeholder="Enter Name Here...">
                 </div>
-                <button id="start-game-button" class="btn btn-primary" type="submit">Start Game!</button>
+                <button id="start-game-button" class="btn btn-primary" type="button">Start Game!</button>
             </form>
         </div>
-        <div id="game-screen">
+        <div id="game-screen" class="p-3">
             <div id="score-tally">
                 <p id="score">
                     User: 0 v CPU: 0
                 </p>
             </div>
-            <form id="game-form" action="">
+            <form id="game-form">
                 <div class="form-group">
                     <label for="user-selection">Select your choice:</label>
                     <select class="custom-select" name="user-selection" id="user-selection">
-                        <option value="Rock">Rock</option>
-                        <option value="Paper">Paper</option>
-                        <option value="Scissors">Scissors</option>
+                        <option value="rock">Rock</option>
+                        <option value="paper">Paper</option>
+                        <option value="scissors">Scissors</option>
                     </select>
                 </div>
-                <button id="go-button" class="btn btn-success" type="submit">Go!</button>
+                <button id="go-button" class="btn btn-success" type="button">Go!</button>
             </form>
             <p id="game-history"></p>
         </div>
